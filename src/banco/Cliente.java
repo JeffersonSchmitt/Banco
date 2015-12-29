@@ -2,24 +2,44 @@ package banco;
 
 public class Cliente extends Conta implements IVerificacao {
 
-    int ID { get; private set }
-    String Nome { get; private set }
-    string dataAniversario { get; private set }
-    String CPF { get; private set }
-    String Telefone { get; private set }
+    private int id;
+    private String nome;
+    private String dataAniversario;
+    private String cpf;
+    private String telefone;
 
     public Cliente(int id, string nome, string dataAniversario, string cpf)
     {
-        this.ID = id;
-        this.Nome = nome;
+        this.iD = id;
+        this.nome = nome;
         this.dataAniversario = dataAniversario;
-        this.CPF = cpf;
+        this.cpf = cpf;
     }
     
-    public SetTelefone(string telefone){
+    public setTelefone(string telefone){
         //fazer validações
         
         this.Telefone = telefone;
+    }
+    
+    public int getId(){
+        return this.id;
+    }
+    
+    public String getNome(){
+        return this.nome;
+    }
+    
+    public String getDataAniversario(){
+        return this.dataAniversario;
+    }
+    
+    public String getCpf(){
+        return this.cpf;
+    }
+    
+    public String getTelefone(){
+        return this.telefone;
     }
 
     public Boolean verifica() {
