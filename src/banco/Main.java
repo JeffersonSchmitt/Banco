@@ -9,7 +9,7 @@ public class Main {
 
         System.out.println("Selecione a opção desejada 1 deposito 2 saque 3 transferencia");
         int opcao = input.nextInt();
-        
+
         switch (opcao) {
             case 1:
                 System.out.println("Voce escolheu 1.");
@@ -20,7 +20,7 @@ public class Main {
             case 3:
                 System.out.println("Voce escolheu 3.");
         }
-    
-        }
+
+    }
 
 }
