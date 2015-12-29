@@ -19,6 +19,6 @@ public abstract class Conta {
     }
     
     public Double verSaldo(){
-        return this saldo;
+        return this.saldo;
     }
 }

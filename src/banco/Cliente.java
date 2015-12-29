@@ -8,18 +8,18 @@ public class Cliente extends Conta implements IVerificacao {
     private String cpf;
     private String telefone;
 
-    public Cliente(int id, string nome, string dataAniversario, string cpf)
+    public Cliente(int id, String nome, String dataAniversario, String cpf)
     {
-        this.iD = id;
+        this.id = id;
         this.nome = nome;
         this.dataAniversario = dataAniversario;
         this.cpf = cpf;
     }
     
-    public setTelefone(string telefone){
+    public void Telefone(String telefone){
         //fazer validações
         
-        this.Telefone = telefone;
+        this.telefone = telefone;
     }
     
     public int getId(){
@@ -43,7 +43,7 @@ public class Cliente extends Conta implements IVerificacao {
     }
 
     public Boolean verifica() {
-        if (this.ID != ID) {
+        if (this.id != id) {
             return false;
         } else {
             return true;

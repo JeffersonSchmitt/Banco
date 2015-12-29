@@ -18,7 +18,7 @@ public class Main {
             case 1:
                 System.out.println("Qual o valor do saque motherfucker?");
                 double valorSaque = input.nextDouble();
-                cliente.saca(valorSaque);
+                clienteNovo.saca(valorSaque);
                 break;
             case 2:
                 //DEPOSITAR
@@ -27,8 +27,7 @@ public class Main {
             case 3:
                 //TRANSFERIR
                 System.out.println("Voce escolheu 3.");
-            case 3:
-                 System.out.println(cliente.verSaldo());
+                 System.out.println(clienteNovo.verSaldo());
         }
 
     }
