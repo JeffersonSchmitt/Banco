@@ -2,9 +2,13 @@ package banco;
 
 public class Adm extends Cliente {
 
-    String Ncadastro;
+    private String nCadastro;
 
-    public void Cadastro() {
-
+    public void Cadastro(String cadastro) {
+        this.nCadastro = cadastro;
+    }
+    
+    public String getNCadastro(){
+        return this.nCadastro;
     }
 }
