@@ -2,9 +2,9 @@ package banco;
 
 public class Adm extends Cliente {
 
-    String Ncadastro;
+    private String Ncadastro;
 
-    public void Cadastro() {
-
+    public void Cadastro(String cadastro) {
+        this.Ncadastro = cadastro;
     }
 }
