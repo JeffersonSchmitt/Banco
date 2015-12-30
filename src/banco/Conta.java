@@ -8,7 +8,7 @@ public abstract class Conta {
     int clienteId;
     double saldo;
     Scanner Leitura = new Scanner(System.in);
-
+    
     public void saca(double valor) {
         if (saldo < 0) {
             System.out.println("conta negativa não podera efetuar saques");
@@ -20,5 +20,9 @@ public abstract class Conta {
     
     public Double verSaldo(){
         return this.saldo;
+    }
+    
+    public Double deposita(double valorDeposito){
+        return valorDeposito+=saldo;
     }
 }

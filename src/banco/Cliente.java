@@ -7,6 +7,7 @@ public class Cliente extends Conta implements IVerificacao {
     private String dataAniversario;
     private String cpf;
     private String telefone;
+    
 
     public Cliente(int id, String nome, String dataAniversario, String cpf)
     {
@@ -22,6 +23,9 @@ public class Cliente extends Conta implements IVerificacao {
         this.telefone = telefone;
     }
     
+    public double saldo(double saldo){
+        return this.saldo;
+    }
     public int getId(){
         return this.id;
     }
