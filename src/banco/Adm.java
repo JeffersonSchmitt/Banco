@@ -8,11 +8,10 @@ public class Adm extends Cliente {
         super(id, nome, dataAniversario, cpf);
     }
 
-    public void Cadastro(String cadastro) {
-        this.nCadastro = cadastro;
+    public String setNCadastro(String cadastro) {
+        return this.nCadastro;
     }
-    
-    public String getNCadastro(){
+    public String getNCadastro() {
         return this.nCadastro;
     }
 }

@@ -7,42 +7,41 @@ public class Cliente extends Conta implements IVerificacao {
     private String dataAniversario;
     private String cpf;
     private String telefone;
-    
 
-    public Cliente(int id, String nome, String dataAniversario, String cpf)
-    {
+    public Cliente(int id, String nome, String dataAniversario, String cpf) {
         this.id = id;
         this.nome = nome;
         this.dataAniversario = dataAniversario;
         this.cpf = cpf;
     }
-    
-    public void Telefone(String telefone){
+
+    public void Telefone(String telefone) {
         //fazer validações
-        
+
         this.telefone = telefone;
     }
     
-    public double saldo(double saldo){
+    public Double verSaldo() {
         return this.saldo;
     }
-    public int getId(){
+
+    public int getId() {
         return this.id;
     }
-    
-    public String getNome(){
+
+    public String getNome() {
         return this.nome;
     }
-    
-    public String getDataAniversario(){
+
+    public String getDataAniversario() {
         return this.dataAniversario;
     }
-    
-    public String getCpf(){
+
+    public String getCpf() {
         return this.cpf;
     }
-    
-    public String getTelefone(){
+
+    public String getTelefone() {
         return this.telefone;
     }
 
