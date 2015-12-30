@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Seja bem vindo ao banco do zézinho!");
         
         Cliente clienteNovo = new Cliente(1, "Lucas", "21/11/1990", "08081608408");
-        clienteNovo.saldo(100.0); //Problema em colocar o saldo;
+        
         System.out.println("Selecione a opção desejada 1 deposito 2 saque 3 transferencia");
         int opcao = input.nextInt();
 
