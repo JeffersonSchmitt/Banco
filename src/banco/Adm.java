@@ -11,7 +11,6 @@ public class Adm extends Cliente {
     public String setNCadastro(String cadastro) {
         return this.nCadastro;
     }
-
     public String getNCadastro() {
         return this.nCadastro;
     }
