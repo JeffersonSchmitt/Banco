@@ -20,7 +20,7 @@ public class Cliente extends Conta implements IVerificacao {
 
         this.telefone = telefone;
     }
-    
+
     public Double verSaldo() {
         return this.saldo;
     }
