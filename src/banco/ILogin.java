@@ -1,6 +1,6 @@
 package banco;
 
-public interface IVerificacao {
+public interface ILogin {
 
     Boolean verifica();
 }

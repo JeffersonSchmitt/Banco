@@ -8,9 +8,8 @@ public abstract class Conta {
     int clienteId;
     protected double saldo;
     Scanner Leitura = new Scanner(System.in);
-
     
-     public void setSaldo(double saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
     public double getSaldo() {
@@ -29,14 +28,13 @@ public abstract class Conta {
     }*/
     
     public double saca(double valorSaque){
-         valorSaque -=this.saldo;
-         return this.saldo;
+         return this.saldo-=valorSaque;
+          
     }
     
     
 
     public double deposita(double valorDeposito) {
-        valorDeposito += this.saldo;
-        return this.saldo;
+        return this.saldo += valorDeposito;
     }
 }
