@@ -1,8 +1,6 @@
 package banco;
 
-import java.util.concurrent.ExecutionException;
-
-public class Cliente extends Conta {
+public class Cliente extends Conta implements IVerificacao {
 
     private int id;
     private String nome;
@@ -17,11 +15,16 @@ public class Cliente extends Conta {
         this.cpf = cpf;
     }
 
-    public void SetTelefone(String telefone) throws Exception {
-        if(telefone.length() <8) throw new Exception("Telefone não pdoe ser menor que 8 digitos");
+    public void Telefone(String telefone) {
+        //fazer validações
+
         this.telefone = telefone;
     }
     
+    public Double verSaldo() {
+        return this.saldo;
+    }
+
     public int getId() {
         return this.id;
     }
@@ -42,8 +45,8 @@ public class Cliente extends Conta {
         return this.telefone;
     }
 
-    public Boolean verifica(int idDigitada) {
-        if (this.id != idDigitada) {
+    public Boolean verifica() {
+        if (this.id != id) {
             return false;
         } else {
             return true;
