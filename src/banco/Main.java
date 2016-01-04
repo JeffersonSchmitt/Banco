@@ -16,7 +16,7 @@ public class Main {
             //sistema de login por id
         System.out.println("Entre com a sua ID " + clienteNovo.getNome() + " para continuar");
         idDigitada = input.nextInt();
-        while (clienteNovo.verifica(idDigitada) == false) { // loop infinito
+        while (clienteNovo.verifica(idDigitada) == false) { 
             System.out.println("Digite novamente");
             idDigitada = input.nextInt();
         }
@@ -27,7 +27,8 @@ public class Main {
         switch (opcao) {
             case 1:
                 System.out.println("Qual o valor do saque motherfucker?");
-                double valorSaque = input.nextDouble();
+                double valorSaque;
+                valorSaque = input.nextDouble();
                 clienteNovo.saca(valorSaque);
                 System.out.println(clienteNovo.getSaldo());
                 break;

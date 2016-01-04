@@ -7,34 +7,27 @@ public abstract class Conta {
     int idConta;
     int clienteId;
     protected double saldo;
-    Scanner Leitura = new Scanner(System.in);
-    
+    Scanner input = new Scanner(System.in);
+
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
     public double getSaldo() {
         return this.saldo;
     }
 
-   
+    public void saca(double valorSaque) {
+           while (this.saldo-valorSaque< 0) {
+            System.out.println("Saldo invalido! Digite o valor de saque novamente");
+            valorSaque = input.nextDouble();
 
-    /*public void saca(double valorSaque) {
-        if (saldo < 0) {
-            System.out.println("conta negativa não podera efetuar saques");
-            this.saldo = 0;
-        } else {
-            valorSaque -= this.saldo;
         }
-    }*/
-    
-    public double saca(double valorSaque){
-         return this.saldo-=valorSaque;
-          
-    }
-    
+            this.saldo-=valorSaque;
+          }
     
 
-    public double deposita(double valorDeposito) {
-        return this.saldo += valorDeposito;
+    public void deposita(double valorDeposito) {
+         this.saldo += valorDeposito;
     }
 }
